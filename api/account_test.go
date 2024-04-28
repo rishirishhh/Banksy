@@ -1,15 +1,17 @@
 package api
 
 import (
-	mockdb "Banksy/db/mock"
-	db "Banksy/db/sqlc"
-	"Banksy/util"
 	"database/sql"
 	"fmt"
 	"net/http"
 	"net/http/httptest"
 	"testing"
 	"time"
+
+	mockdb "Banksy/db/mock"
+	db "Banksy/db/sqlc"
+
+	"Banksy/util"
 
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
